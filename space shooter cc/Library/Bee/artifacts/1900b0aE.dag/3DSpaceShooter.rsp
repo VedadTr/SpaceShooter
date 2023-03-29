@@ -349,8 +349,13 @@
 -r:"D:/Unity/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Plugins/Sirenix/Assemblies/Editor/Sirenix.Utilities.dll"
+"Assets/_project/scripts/MatchRotation.cs"
+"Assets/_project/scripts/Ship Controls/DesktopMovementControls.cs"
+"Assets/_project/scripts/Ship Controls/iMovementControls.cs"
+"Assets/_project/scripts/Ship Controls/iMovementControlsBase.cs"
 "Assets/_project/scripts/Ship Controls/ShipController.cs"
+"Assets/_project/scripts/Ship Controls/ShipInputManager.cs"
+"Assets/_project/scripts/Ship Controls/ShipMovementInput.cs"
 "Assets/_project/scripts/SkyboxSetter.cs"
 -langversion:9.0
 

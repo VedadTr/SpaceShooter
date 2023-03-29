@@ -1,10 +1,15 @@
-using Sirenix.OdinInspector;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
+    //   [InlineEditor(InlineEditorObjectFieldModes.Boxed)]
+    [SerializeField]
+    //[Required] 
+    ShipMovementInput _movementInput;
 
     [BoxGroup("Ship movement values")]
     [SerializeField]
@@ -19,10 +24,19 @@ public class ShipController : MonoBehaviour
     [Range(-1f, 1f)]
     float _thrustAmount, _pitchAmount, _rollAmount, _yawAmount = 0f;
 
+    IMovementControls ControlInput => _movementInput.MovementControls;
 
     void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        _thrustAmount = ControlInput.ThrustAmount;
+        _rollAmount = ControlInput.RollAmount;
+        _yawAmount = ControlInput.YawAmount;
+        _pitchAmount = ControlInput.PitchAmount;
     }
 
     void FixedUpdate()
@@ -46,6 +60,5 @@ public class ShipController : MonoBehaviour
         {
             _rigidBody.AddForce(transform.forward * (_thrustForce * _thrustAmount * Time.fixedDeltaTime));
         }
-
     }
-    }
+}
