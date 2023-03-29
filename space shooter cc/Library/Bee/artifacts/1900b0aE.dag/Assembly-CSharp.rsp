@@ -114,8 +114,20 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:ODIN_INSPECTOR
+-define:ODIN_INSPECTOR_3
+-define:ODIN_INSPECTOR_3_1
+-define:ODIN_VALIDATOR
+-define:ODIN_VALIDATOR_3_1
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll"
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll"
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinValidator.Editor.dll"
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.Reflection.Editor.dll"
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll"
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll"
+-r:"Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll"
 -r:"Assets/Sketchfab For Unity/Dependencies/Libraries/GLTFSerialization.dll"
 -r:"Assets/Sketchfab For Unity/Dependencies/Libraries/Ionic.Zip.Unity.dll"
 -r:"Assets/Sketchfab For Unity/Dependencies/Libraries/SketchfabPlugin.dll"
@@ -326,6 +338,7 @@
 -r:"D:/Unity/2021.3.21f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"D:/Unity/2021.3.21f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/3DSpaceShooter.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -349,6 +362,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Plugins/Sirenix/Assemblies/Editor/Sirenix.Utilities.dll"
 "Assets/Asset Store/Starfield Skybox/Demo/Script/LookCamera.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserManager.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserWindow.cs"
